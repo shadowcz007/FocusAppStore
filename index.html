@@ -22,6 +22,7 @@
             border-radius: 9999px; /* Fully rounded */
             font-size: 0.875rem; /* text-sm */
             transition: background-color 0.2s ease;
+            cursor: pointer;
         }
         .get-button:hover {
             background-color: #e5e5ea; /* Slightly darker gray on hover */
@@ -39,6 +40,7 @@
             line-height: 1;
         }
     </style>
+  
 </head>
 <body class="bg-gray-50 text-gray-800">
 
@@ -326,6 +328,19 @@
             &copy; 2025 专注力应用商店. 版权所有.
         </div>
     </footer>
-
+    <script>
+        // 跳转到飞书文档的函数
+        function redirectToFeishu() {
+            window.open('https://qwyofiv4bd3.feishu.cn/wiki/EYrIwgZlriIy8hkX73dcSPumnuc', '_blank');
+        }
+        
+        // 页面加载完成后为所有按钮添加点击事件
+        window.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.get-button');
+            buttons.forEach(button => {
+                button.addEventListener('click', redirectToFeishu);
+            });
+        });
+    </script>
 </body>
 </html>
