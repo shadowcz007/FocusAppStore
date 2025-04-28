@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专注力应用商店</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font globally */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for the 'Get' button to mimic App Store */
+        .get-button {
+            background-color: #f0f0f5; /* Light gray background */
+            color: #007aff; /* Blue text */
+            font-weight: 600; /* Semibold */
+            padding: 4px 16px;
+            border-radius: 9999px; /* Fully rounded */
+            font-size: 0.875rem; /* text-sm */
+            transition: background-color 0.2s ease;
+        }
+        .get-button:hover {
+            background-color: #e5e5ea; /* Slightly darker gray on hover */
+        }
+        /* Simple placeholder icon style */
+        .app-icon {
+            background-color: #e2e8f0; /* slate-200 */
+            color: #475569; /* slate-600 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 0.75rem; /* text-xs */
+            text-align: center;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="border-b border-gray-200 bg-white sticky top-0 z-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <h1 class="text-2xl sm:text-3xl font-bold text-gray-900">专注力应用商店</h1>
+            <p class="text-sm text-gray-500 mt-1">精选工具，助您保持专注</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+
+        <section class="mb-12 bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+            <h2 class="text-xl font-semibold mb-3 text-gray-900">提升您的专注力</h2>
+            <p class="text-gray-600 leading-relaxed">
+                在信息过载的时代，保持专注是一项挑战。这个应用商店汇集了各类工具，旨在帮助您优化环境、管理时间、训练心智，从而提升专注力，更高效地工作与生活。探索下面的分类，找到适合您的应用。
+            </p>
+        </section>
+
+        <div class="space-y-12">
+
+            <section>
+                <h2 class="text-2xl font-semibold mb-6 border-b pb-2 border-gray-200 text-gray-900">阻断分心的应用</h2>
+                <div class="grid grid-cols-1 gap-6">
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                        <img src="https://placehold.co/64x64/e2e8f0/475569?text=SF" alt="StayFocusd 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">StayFocusd</h3>
+                            <p class="text-sm text-gray-500">限制网站访问时间 (Chrome)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=LB" alt="LeechBlock 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">LeechBlock</h3>
+                            <p class="text-sm text-gray-500">灵活的网站屏蔽 (Firefox)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=WNT" alt="WasteNoTime 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">WasteNoTime</h3>
+                            <p class="text-sm text-gray-500">限制分心网站时间 (Safari)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                     <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=CT" alt="Cold Turkey 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Cold Turkey</h3>
+                            <p class="text-sm text-gray-500">严格的阻断工具 (Windows, Android)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                     <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=FCS" alt="Focus 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Focus</h3>
+                            <p class="text-sm text-gray-500">自定义屏蔽计划 (Mac)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                     <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=AB" alt="about:blank 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">about:blank</h3>
+                            <p class="text-sm text-gray-500">清理与限制浏览 (iOS Safari)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">查看</button> </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold mb-6 border-b pb-2 border-gray-200 text-gray-900">时间追踪应用</h2>
+                <div class="grid grid-cols-1 gap-6">
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                        <img src="https://placehold.co/64x64/e2e8f0/475569?text=QB" alt="Qbserve 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Qbserve</h3>
+                            <p class="text-sm text-gray-500">自动追踪生产力时间 (Mac)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=MT" alt="ManicTime 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">ManicTime</h3>
+                            <p class="text-sm text-gray-500">详细记录应用时间 (Windows)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=RT" alt="RescueTime 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">RescueTime</h3>
+                            <p class="text-sm text-gray-500">全面时间追踪方案 (跨平台)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                     <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=AU" alt="App Usage 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">App Usage</h3>
+                            <p class="text-sm text-gray-500">统计应用使用时间 (Android)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                     <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=iOS" alt="iOS Built-in 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">iOS 内置功能</h3>
+                            <p class="text-sm text-gray-500">查看电池与应用使用情况 (iOS)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">查看</button>
+                    </div>
+                     <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=FOR" alt="Forest 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Forest</h3>
+                            <p class="text-sm text-gray-500">游戏化专注鼓励 (iOS/Android)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold mb-6 border-b pb-2 border-gray-200 text-gray-900">强制休息提醒</h2>
+                <div class="grid grid-cols-1 gap-6">
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                        <img src="https://placehold.co/64x64/e2e8f0/475569?text=TO" alt="Time Out 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Time Out</h3>
+                            <p class="text-sm text-gray-500">定时锁屏强制休息 (Mac)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=ER" alt="EyesRelax 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">EyesRelax</h3>
+                            <p class="text-sm text-gray-500">保护眼睛休息提醒 (Windows)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=WR" alt="Workrave 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Workrave</h3>
+                            <p class="text-sm text-gray-500">细致的休息计划 (Linux, Windows)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold mb-6 border-b pb-2 border-gray-200 text-gray-900">习惯追踪应用</h2>
+                <div class="grid grid-cols-1 gap-6">
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                        <img src="https://placehold.co/64x64/e2e8f0/475569?text=HBT" alt="Habit 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Habit</h3>
+                            <p class="text-sm text-gray-500">简洁的习惯追踪 (iOS)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=STR" alt="Strides 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Strides</h3>
+                            <p class="text-sm text-gray-500">多功能习惯与目标追踪 (iOS + web)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=LP" alt="Loop 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Loop</h3>
+                            <p class="text-sm text-gray-500">开源习惯追踪 (Android)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                     <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=HBC" alt="Habitica 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Habitica</h3>
+                            <p class="text-sm text-gray-500">游戏化习惯养成 (iOS + Android + web)</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold mb-6 border-b pb-2 border-gray-200 text-gray-900">冥想与专注应用</h2>
+                <div class="grid grid-cols-1 gap-6">
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                        <img src="https://placehold.co/64x64/e2e8f0/475569?text=HS" alt="Headspace 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Headspace</h3>
+                            <p class="text-sm text-gray-500">引导式冥想课程</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=CLM" alt="Calm 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Calm</h3>
+                            <p class="text-sm text-gray-500">冥想课程与睡眠故事</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=IT" alt="Insight Timer 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Insight Timer</h3>
+                            <p class="text-sm text-gray-500">大量免费冥想内容</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                     <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=FK" alt="Focus Keeper 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Focus Keeper</h3>
+                            <p class="text-sm text-gray-500">番茄工作法计时器</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                     <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=BFT" alt="Bear Focus Timer 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Bear Focus Timer</h3>
+                            <p class="text-sm text-gray-500">简洁美观的专注计时器</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                     <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=TID" alt="Tide 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Tide</h3>
+                            <p class="text-sm text-gray-500">结合专注音乐与计时器</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                </div>
+            </section>
+
+             <section>
+                <h2 class="text-2xl font-semibold mb-6 border-b pb-2 border-gray-200 text-gray-900">任务管理应用</h2>
+                <div class="grid grid-cols-1 gap-6">
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                        <img src="https://placehold.co/64x64/e2e8f0/475569?text=TRL" alt="Trello 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Trello</h3>
+                            <p class="text-sm text-gray-500">看板式项目管理</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=SCP" alt="Scapple 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Scapple</h3>
+                            <p class="text-sm text-gray-500">思维导图与想法关联</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex items-center space-x-4">
+                         <img src="https://placehold.co/64x64/e2e8f0/475569?text=NTN" alt="Notion 图标" class="w-16 h-16 rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-gray-900">Notion</h3>
+                            <p class="text-sm text-gray-500">多合一工作空间</p>
+                        </div>
+                        <button class="get-button flex-shrink-0">获取</button>
+                    </div>
+                </div>
+            </section>
+
+        </div> </main>
+
+    <footer class="mt-12 border-t border-gray-200 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-gray-500 text-sm">
+            &copy; 2025 专注力应用商店. 版权所有.
+        </div>
+    </footer>
+
+</body>
+</html>
